@@ -3,8 +3,8 @@ from sklearn.cluster import KMeans
 import nltk
 import gensim
 
-nltk.download('punkt')
-nltk.download('stopwords')
+# nltk.download('punkt')
+# nltk.download('stopwords')
 
 # #### 1. importamos el dataset
 df_sentiments = pd.read_csv("./nlp/sentiments.csv", delimiter=";")
