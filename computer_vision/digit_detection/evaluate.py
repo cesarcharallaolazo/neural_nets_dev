@@ -4,7 +4,7 @@ import random
 import os
 import pdb
 
-data_dir = 'data/MNIST/raw'
+data_dir = 'images_cifar/MNIST/raw'
 # pdb.set_trace()
 with gzip.open(os.path.join(data_dir, "t10k-images-idx3-ubyte.gz"), "rb") as f:
     images = np.frombuffer(f.read(), np.uint8, offset=16).reshape(-1, 28, 28).astype(np.float32)
